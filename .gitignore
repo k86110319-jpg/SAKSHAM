@@ -1,0 +1,4 @@
+db.php
+.vscode/
+uploads/*
+!uploads/.gitkeepgit add .

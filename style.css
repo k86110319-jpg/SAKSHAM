@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f7fc;
+    color: #1e293b;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #123c69;
+    color: white;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 27px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #9dd6ff;
+}
+
+.hero {
+    padding: 75px 8%;
+    background: linear-gradient(120deg, #123c69, #2878b8);
+    color: white;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    max-width: 750px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 20px 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 21px;
+    background: #ffbd59;
+    color: #172b4d;
+    text-decoration: none;
+    border: 0;
+    border-radius: 7px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px 4px 5px 0;
+}
+
+.btn-blue {
+    background: #1769aa;
+    color: white;
+}
+
+.container {
+    width: 88%;
+    max-width: 1150px;
+    margin: 35px auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #123c69;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px #163b5b12;
+}
+
+.card h3 {
+    color: #1769aa;
+    margin-bottom: 10px;
+}
+
+.form-box {
+    max-width: 500px;
+    margin: 45px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 3px 14px #163b5b18;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 9px 0 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.course-price {
+    color: #16834a;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.message {
+    padding: 12px;
+    background: #e0f2fe;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #123c69;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+a:focus, button:focus, input:focus, select:focus,
+textarea:focus {
+    outline: 3px solid #ffbd59;
+    outline-offset: 2px;
+}
+
+@media(max-width:600px) {
+    .navbar {
+        padding: 16px 5%;
+    }
+    .container {
+        width: 92%;
+    }
+    .hero {
+        padding: 50px 6%;
+    }
+}
+
+/* SAKSHAM Neon Lightning Effect */
+
+@keyframes neonLightning {
+    0% {
+        box-shadow: 0 0 5px #00e5ff, 0 0 10px #00e5ff;
+        border-color: #00e5ff;
+    }
+
+    25% {
+        box-shadow: 0 0 10px #ff00ff, 0 0 25px #ff00ff;
+        border-color: #ff00ff;
+    }
+
+    50% {
+        box-shadow: 0 0 10px #00ff88, 0 0 25px #00ff88;
+        border-color: #00ff88;
+    }
+
+    75% {
+        box-shadow: 0 0 10px #ff9900, 0 0 25px #ff9900;
+        border-color: #ff9900;
+    }
+
+    100% {
+        box-shadow: 0 0 5px #00e5ff, 0 0 10px #00e5ff;
+        border-color: #00e5ff;
+    }
+}
+
+/* Glowing website cards */
+.feature-card {
+    border: 2px solid #00e5ff;
+    animation: neonLightning 3s infinite;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: scale(1.04);
+}
+
+/* Glowing main heading */
+h1 {
+    animation: neonLightning 3s infinite;
+    border-radius: 10px;
+}

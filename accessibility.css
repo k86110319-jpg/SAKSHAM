@@ -1,0 +1,39 @@
+.accessibility-toolbar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+    background: #eaf2ff;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+.accessibility-toolbar button {
+    padding: 9px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #174ea6;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.accessibility-toolbar button:hover {
+    background: #0b3475;
+}
+
+.high-contrast {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+.high-contrast * {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+}
+
+button:focus, a:focus {
+    outline: 3px solid orange;
+    outline-offset: 3px;
+}
